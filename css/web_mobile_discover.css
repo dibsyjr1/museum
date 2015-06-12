@@ -1,0 +1,507 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	width: 100%;
+	display: block;
+	min-width: 400px;
+}
+h1 {
+	font-family: alegreya-sc, serif;
+	margin: 0;
+	color: #3B3B3B;
+	padding-top: 20px;
+	padding-left: 130px
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 90px;
+	
+}
+#logo_image {
+	height: 90px;
+	width: 90px;
+	background-image:url(../images/SHMLogo.jpg);
+	background-repeat: no-repeat;
+}
+h3 {
+	font-family: alegreya-sc, serif;
+	margin-top: 0px;
+	margin-left: 173px;
+	float: left;
+	position: absolute;
+	top: 50px; 
+	left: -30px;
+}
+#header a {
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 70px;
+}
+#footer a {
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 70px;
+}
+#main_image_a{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	background-image:url(../images/medieval_main_phone.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	width: 100%;
+	
+	min-width: 200px;
+	display: block;
+	text-decoration: none;
+	border-top-left-radius: 2em;
+}
+#main_image_b{
+	clear: both;
+	float: right;
+	background-image:url(../images/egypt_phone.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	
+	min-width: 200px;
+	position: relative;
+	top: -553px;
+	width: 50%;
+	display: block;
+	border-top-right-radius: 2em;
+}
+
+#main_text{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: #cccc00;
+	color: #FFF;
+	height: 30px;
+	width: 140px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+#main_description_a{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: #cccc00;
+	color: #FFF;
+	position: relative;
+	height: 30px;
+	left: -160px;
+	top: 295px;
+	float: left;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#main_description_b{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	height: 30px;
+	top: 295px;
+	background-color: #cccc00;
+	color: #FFF;
+	position: relative;
+	left: -10px;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#left_column {
+	clear: none;
+	float: left;
+	margin-top: 1%;
+	width: 100%;
+	font-size: 12px;
+	display: block;
+	position: relative;
+	top: -750px;
+	background-color: #cccc00;
+	color: white;
+	min-width: 385px;
+	padding: 2%;
+    border-bottom-left-radius: 2em;	
+    border-bottom-right-radius: 2em;
+}
+#right_column {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	display: block;
+	top: -600px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	width: 80%;
+	top: -748px;
+	display: block;
+	min-width: 400px;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#main_description_a{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: #cccc00;
+	color: #FFF;
+	position: relative;
+	height: 30px;
+	top: 382px;
+	left: -160px;
+	float: left;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#main_description_b{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: #cccc00;
+	color: #FFF;
+	position: relative;
+	top: 382px;
+	height: 30px;
+	text-align: top;
+	left: -10px;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#main_image_a{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	background-image:url(../images/medieval_main_tablet.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	border-top-left-radius: 2em;
+}
+#main_image_b{
+	clear: both;
+	float: right;
+	background-image:url(../images/egypt_tablet.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	position: relative;
+	top: -553px;
+	width: 50%;
+	display: block;
+	border-top-right-radius: 2em;
+}
+#left_column {
+	clear: both;
+	float: left;
+	margin-left: 0%;
+	margin-top: 1%;
+	position: relative;
+	height: 60px;
+	color: white;
+	padding:1.5%;
+	font-size: 14;
+	width: 97%;
+	top: -668px;
+	display: block;
+	font-family: alegreya-sc, serif;
+	background-color: #cccc00;
+	border-bottom-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+}
+#right_column {
+	clear: none;
+	float: left;
+	margin-left: 2.2821%;
+	width: 47.7179%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	top: -668px;
+	margin-left: 0;
+	height: 120px;
+	width: 100%;
+	display: block;
+	
+	max-width: 1000px;
+}
+#header a {
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 80px;
+}
+#footer a {
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 80px;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.5%;
+	max-width: 950px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	max-width: 968px;
+}
+#main_text{
+	font-family: alegreya-sc, serif;
+	font-size: 40px;
+	background-color: #cccc00;
+	color: #FFF;
+	height: 40px;
+	width: 190px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+#main_description_a{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: #cccc00;
+	color: #FFF;
+	position: relative;
+	top: 487px;
+	left: -210px;
+	float: left;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#main_description_b{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: #cccc00;
+	color: #FFF;
+	position: relative;
+	top: 487px;
+	left: -10px;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#main_image_a{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	background-image:url(../images/medieval_main.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	border-top-left-radius: 2em;
+}
+#main_image_b{
+	clear: both;
+	float: right;
+	background-image:url(../images/egypt.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	position: relative;
+	top: -553px;
+	width: 50%;
+	display: block;
+	border-top-right-radius: 2em;
+}
+#left_column {
+	clear: both;
+	float: left;
+	margin-left: 0%;
+	margin-top: 1%;
+	position: relative;
+	height: 60px;
+	color: white;
+	padding:1.5%;
+	font-size: 18px;
+	width: 97%;
+	top: -553px;
+	display: block;
+	font-family: alegreya-sc, serif;
+	background-color: #cccc00;
+	border-bottom-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+}
+#right_column {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	top: -483px;
+	margin-top: 1%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	top: -553px;
+	width: 100%;
+	display: block;
+	position: relative;
+	
+	max-width: 968px;
+}
+#header a {
+	font-size: 25px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 125px;
+}
+#footer a {
+	font-size: 25px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 125px;
+}
+}

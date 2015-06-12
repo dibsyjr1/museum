@@ -1,0 +1,389 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	width: 100%;
+	display: block;
+	min-width: 400px;
+}
+h1 {
+	font-family: alegreya-sc, serif;
+	margin: 0;
+	color: #3B3B3B;
+	padding-top: 20px;
+	padding-left: 130px
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 90px;
+	
+}
+#logo_image {
+	height: 90px;
+	width: 90px;
+	background-image:url(../images/SHMLogo.jpg);
+	background-repeat: no-repeat;
+}
+h3 {
+	font-family: alegreya-sc, serif;
+	margin-top: 0px;
+	margin-left: 173px;
+	float: left;
+	position: absolute;
+	top: 50px; 
+	left: -30px;
+}
+#header a {
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 70px;
+}
+#main_image {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 354px;
+	width: 100%;
+	display: block;
+	background-image: url(../images/museum_background_mobile.jpg);
+	background-repeat: no-repeat;
+	min-width: 400px;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+#main_text{
+	font-family: alegreya-sc, serif;
+	font-size: 30px;
+	background-color: red;
+	color: #FFF;
+	height: 30px;
+	width: 80px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#left_column {
+	clear: none;
+	float: left;
+	margin-top: 1%;
+	width: 100%;
+	font-size: 12px;
+	display: block;
+	background-color: red;
+	color: white;
+	min-width: 385px;
+	max-width: 387px;
+	padding: 2%;
+    border-bottom-left-radius: 2em;	
+    border-bottom-right-radius: 2em;
+}
+#right_column {
+	clear: none;
+	float: left;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	width: 100%;
+	display: block;
+	min-width: 400px;
+}
+#footer a {
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 70px;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header a {
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 80px;
+}
+h3 {
+	font-family: alegreya-sc, serif;
+	margin-top: 0px;
+	margin-left: 173px;
+	float: left;
+	position: absolute;
+	top: 50px; 
+	left: 0px;
+}
+#main_image {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	background-image: url(../images/museum_background_tablet.jpg);
+	background-repeat: no-repeat;
+	height: 362px;
+	width: 100%;
+	display: block;
+}
+#main_text{
+	font-family: alegreya-sc, serif;
+	font-size: 40px;
+	background-color: red;
+	color: #FFF;
+	height: 40px;
+	width: 105px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+#left_column {
+	clear: none;
+	float: left;
+	width: 48%;
+	font-size: 10px;
+	height: 205px;
+	min-height: 201px;
+	display: block;
+	min-width: 0px;
+	padding: 1%;
+	
+    border-bottom-right-radius: 0em;
+}
+#right_column {
+	clear: none;
+	float: left;
+	margin-top: 1%;
+	margin-left: 1%;
+	width: 49%;
+	height: 216px;
+	display: block;
+	background-image:url(../images/museum_main_tablet.jpg);
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 2em;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	width: 100%;
+	display: block;
+}
+#footer a {
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 80px;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.5%;
+	max-width: 840px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	max-width: 968px;
+}
+#header a {
+	font-size: 25px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 125px;
+}
+#main_text{
+	font-family: alegreya-sc, serif;
+	font-size: 40px;
+	background-color: red;
+	color: #FFF;
+	height: 40px;
+	width: 110px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	opacity: 0.9;
+}
+h3 {
+	font-family: alegreya-sc, serif;
+	margin-top: 0px;
+	margin-left: 173px;
+	float: left;
+	position: absolute;
+	top: 50px; 
+	left: 0px;
+}
+#main_image {
+	border-top-left-radius: 2em;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	background-image: url(../images/museum_background_home.jpg);
+	background-repeat: no-repeat;
+	height: 553px;
+	width: 100%;
+	display: block;
+    border-top-right-radius: 2em;
+}
+#left_column {
+	clear: both;
+	float: left;
+	margin-top: 1%;
+	margin-right: 1%;
+	padding: 2%;
+	font-size: 14px;
+	width: 46%;
+	height: 242px;
+	min-height: 242px;
+	display: block;
+	font-family: alegreya-sc, serif;
+    border-bottom-left-radius: 2em;
+}
+#right_column {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	margin-top: 1%;
+	height: 276px;
+	width: 49%;
+	display: block;
+	background-image: url(../images/museum_main.jpg);
+	background-repeat: no-repeat;
+    border-bottom-right-radius: 2em;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	height: 120px;
+	width: 100%;
+	display: block;
+	
+	max-width: 968px;
+}
+#footer a {
+	font-size: 25px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #3B3B3B;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 125px;
+}
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'></link>
+    <script type='text/javascript' src='http://www.x3dom.org/x3dom/release/x3dom.js'></script>
+<title>Discover Medieval</title>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="//use.edgefonts.net/alegreya-sc.js"></script>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/web_mobile_discover_medieval.css" rel="stylesheet" type="text/css">
+<link href="css/web3d_format_discover_medieval.css" rel="stylesheet" type="text/css">
+
+<script src="javascript/getMedievalObjects.js"></script>
+
+<link href="css/jquery.nailthumb.1.1.css" type="text/css" rel="stylesheet">
+<script src="javascript/jquery.nailthumb.1.1.js"></script>
+<script src="javascript/createThumbnails.js"></script>
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="javascript/respond.min.js"></script>
+<link href="css/formatting.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="header">
+  	<div id="logo_image"></div>
+    <h1>Sussex History Museum</h1>
+    <h3>Making History Come Alive </h3>
+    <ul>
+      <li>      <a href="index.html">home</a> </li>
+      <li>      <a href="discover.html">discover</a> </li>
+      <li>      <a href="support.html">support</a> </li>
+      <li>      <a href="schools.html">schools</a> </li>
+      <li>      <a href="visiting.html">visit</a> </li>
+    </ul>
+  </div>
+  <div id="main_image_a">
+  <div id="main_text">Medieval</div>
+  <div id="objectPageSelector"> 
+           	<h3>Browse Objects</h3>     
+  			<!-- Use buttons to select the desired cultural object-->
+            <!--<p class="center"><button type="button" id="object1">Object 1</button> 
+            				| <button type="button" id="object2">Object 2</button> 
+            				| <button type="button" id="object3">Object 3</button>
+                            | <button type="button" id="object4">Object 4</button></p>-->
+			
+            <!-- Alternatively use the JQuery $().nailthumb() function to create cultural object thumbnails to select the desired cultural object-->  
+
+					<div id="link1"><a href="#" ><img id="object1" src="" alt="object1"/></a></div>        
+					<div id="link2"><a href="#" ><img id="object2" src="" alt="object2"/></a></div>
+					<div id="link3"><a href="#" ><img id="object3" src="" alt="object3"/></a></div>
+					<div id="link4"><a href="#" ><img id="object4" src="" alt="object4"/></a></div>
+                       
+  </div>
+  <div id="mediaObjects">
+      		<h3>Media Objects</h3> 
+  				<div style="display:block;">
+					<center>
+                    	<!--A media object is display by utilising the JQuery $(.class).show(); $(.class).hide() and $(.class).fadout(); functions-->
+						<div class ="objImage"> <!--Show or hide based on JQuery .click() used to process the media selection-->
+                        	<div id="imageUrl" style="border:none" ></div>
+                        </div>
+                        <div class ="obj3D" align="center" > <!--Show or hide based on JQuery .click() used to process the objectMediaSelector-->								
+							<x3d id="3d_object">
+								<scene id="x3domObject">
+                                	<!--<inline id="x3domUrl">Media object url will replace the existing url</inline>-->
+									<inline id="x3domUrl" nameSpaceName="bowl" mapDEFToID="true" onclick="rotateObject();" url="assets/x3d/Bowl2.x3d"> </inline>
+								</scene>
+							</x3d>	
+                        </div>
+					</center>	
+        </div>
+    </div>
+        <div id="objectMediaSelector"> <!--This is a fluid grid container-->
+            	<h3>Select Media Object</h3> 
+    			<!--Use simple links to selct the media object-->
+                <!--<p align="center">	
+                	<a href="#" id="objImage">IMAGE</a> | 
+                	<a href="#" id="objVideo">VIDEO</a> | 
+                    <a href="#" id="obj3D">X3DOM</a>  | 
+               	</p>-->
+                <!--Alternatively, use some asthetically cool looking icons borrowed from the Interweb!-->
+                	<div id="imageLink">               
+					<a href="#" id="objImage"><img src="assets/icons/image.jpg" alt="IMAGE"/></a>
+                    </div>
+                    <div id="x3dLink">
+					<a href="#" id="obj3D"><img src="assets/icons/x3d.png" alt="X3DOM"/></a>               
+					</div>
+  		</div>
+  
+  <div id="objectDescription">
+        	<h3>Description</h3> 
+            <div id="name"></div>
+    		<div id="description"></div>
+  </div>
+  
+  <div id="objectData"> <!--This is a fluid grid container-->
+        	<h3>Further Information</h3>                   
+            <ul class="furtherinfo_body" style="display:none">
+                <li><span>Object: </span><div id="object" style="display:inline"></div></li>
+                <li><span>Materials: </span><div id="materials" style="display:inline"></div></li>
+                <li><span>Culture Group: </span><div id="cultureGroup" style="display:inline"></div></li>
+                <li><span>Dimensions: </span><div id="dimensions" style="display:inline"></div></li>
+                <li><span>Production Date: </span><div id="productionDate" style="display:inline"></div></li>
+                <li><span>Associated Places: </span><div id="associatedPlaces" style="display:inline"></div></li>
+                <li><span>Associated People: </span><div id="associatedPeople" style="display:inline"></div></li>
+                <li><span>Museum: </span><div id="museum" style="display:inline"></div></li>
+                <li><span>Accession Number: </span></b><div id="accessionNumber" style="display:inline"></div></li>
+            </ul>
+        	<div id="furtherInfo"><a href="#">View &#8595;</a><a href="#" class="furtherinfo_hide" style="display:none">Hide &#8593;</a>
+  			</div>
+<div id="footer">
+<ul>
+      <li>      <a href="references.docx">references</a> </li>
+      <li>      <a href="statement_of_originality.docx">s.o.o.</a> </li>
+      <li>      <a href="assets/x3d/x3d.zip">download</a> </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

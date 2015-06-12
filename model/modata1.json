@@ -1,0 +1,72 @@
+{
+    "medievalObjects": [
+		{
+		"name": "Horn of King Harold II",
+		"description": "This Horn belonged to King Harold Godwinson (Harold II), the last Anglo-Saxon King of England. King Harold reigned from 1022 - 14th October 1066. He died at the Battle of Hastings whilst fighting Normal invaders led by William the Conqueror during the Normal conquest of England. His death marked the end of Anglo-Saxon rule over England. The horn was found at Hastings in 1964 and has been at the Sussex History Museum ever since.",
+		"object": "Wooden, Steel Plated Horn", 
+		"materials": "Wood, Steel",
+		"cultureGroup": "Anglo-Saxon",
+		"dimensions": "63.5cm (along line of horn)",
+		"productionDate": "990-1130",
+		"associatedPlaces": "Battle of Hastings",
+		"associatedPeople": "King Harold II",
+		"museum": "Sussex History Museum",
+		"accessionNumber": "Room 40: Medieval Sussex",
+		"imageUrl": "assets/images/horn.jpg",
+        "imageLargeUrl": "assets/images/horn_large.jpg",
+        "imageSmallUrl": "assets/thumbnails/horn_thumbnail.png",
+        "x3domUrl": "assets/x3d/horn.x3d"
+		},
+		{
+		"name": "Sword of King Harold II",
+        "description": "This Sword also belonged to King Harold Godwinson (Harold II), the last Anglo-Saxon King of England. King Harold reigned from 1022 - 14th October 1066. He died at the Battle of Hastings whilst fighting Normal invaders led by William the Conqueror during the Normal conquest of England. His death marked the end of Anglo-Saxon rule over England. The sword was found at Hastings in 1964 and has been at the Sussex History Museum ever since.",       
+		"object": "Sword",
+        "materials": "Steel, Gold, Leather",
+        "cultureGroup": "Anglo-Saxon",
+        "dimensions": "Length: 181.400 cm, Length: 181.400 cm, Width: 40.600 cm (quillons), Weight: 4.700 kg",
+        "productionDate": "1010-1110",
+        "associatedPlaces": "Battle of Hastings",
+        "associatedPeople": "King Harold II",
+        "museum": "Sussex History Museum",
+        "accessionNumber": "Room 40: Medieval Sussex",		
+		"imageUrl": "assets/images/sword.jpg",
+        "imageLargeUrl": "assets/images/sword_large.jpg",
+        "imageSmallUrl": "assets/thumbnails/sword_thumbnail.png",
+        "x3domUrl": "assets/x3d/sword.x3d"
+		},
+		{
+        "name": "Cooking Knife",
+        "description": "This cooking knife was typical in the 1100s, used by all households for chopping ingredients in preparation for meals. The blade is made of steel and the handle of copper with a leather grip. The knife was found at Falmer in 1943 and has been at the Sussex History Museum ever since.",
+        "object": "Cooking Knife",
+        "materials": "Steel, Copper, Leather",
+        "cultureGroup": "Norman, French",
+        "dimensions": "Length: 37.30 cm",
+        "productionDate": "1100-1237",
+        "associatedPlaces": "Falmer",
+        "associatedPeople": "Unknown",
+        "museum": "Sussex History Museum",
+        "accessionNumber": "Room 40: Medieval Sussex",		
+	   "imageUrl": "assets/images/cooking_knife.jpg",
+        "imageLargeUrl": "assets/images/cooking_knife_large.jpg",
+        "imageSmallUrl": "assets/thumbnails/cooking_knife_thumbnail.png",
+        "x3domUrl": "assets/x3d/cooking_knife.x3d"
+		},
+        {
+        "name": "Water Jug",
+        "description": "This jug was typical in the 1000s, used by all households to store drinking water for later use. The jug is made of clay in its entirety. The jug was found in pieces but restored in 1954 and has been at the Sussex History Museum ever since.",
+        "object": "Water Jug",
+        "materials": "Clay",
+        "cultureGroup": "Anglo-Saxon",
+        "dimensions": "Height: 28.500 cm",
+        "productionDate": "990-1110",
+        "associatedPlaces": "Hastings",
+        "associatedPeople": "Unknown",
+        "museum": "Sussex History Museum",
+        "accessionNumber": "Room 40: Medieval Sussex",      
+        "imageUrl": "assets/images/jug.jpg",
+        "imageLargeUrl": "assets/images/jug_large.jpg",
+        "imageSmallUrl": "assets/thumbnails/jug_thumbnail.png",
+        "x3domUrl": "assets/x3d/jug.x3d"
+        }
+	]
+}
